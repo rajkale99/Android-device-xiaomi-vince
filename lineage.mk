@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-$(call inherit-product, device/xiaomi/mido/full_vince.mk)
+$(call inherit-product, device/xiaomi/vince/full_vince.mk)
 
 # Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
