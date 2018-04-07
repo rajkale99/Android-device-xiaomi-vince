@@ -30,9 +30,9 @@ PRODUCT_COPY_FILES += \
         $(LOCAL_PATH)/audio/mixer_paths_vince.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_vince.xml \
         $(LOCAL_PATH)/audio/tas2557evm.ftcfg:$(TARGET_COPY_OUT_VENDOR)/etc/tas2557evm.ftcfg
 
-# Fingerprint
+# Keymaster
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.0-service.xiaomi_vince
+    libkeymaster1
 
 # Consumerir
 PRODUCT_PACKAGES += \
@@ -40,6 +40,7 @@ PRODUCT_PACKAGES += \
 
 # Ramdisk
 PRODUCT_PACKAGES += \
+    init.goodix.sh \
     init.vince.rc
 
 # Sensors
