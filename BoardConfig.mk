@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2018 The LineageOS Project
+# Copyright (C) 2017 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -37,13 +37,13 @@ BOARD_RECOVERYIMAGE_PARTITION_SIZE := 67108864
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 25765043200 # 25765059584 - 16384
 BOARD_VENDORIMAGE_PARTITION_SIZE := 872415232
 
-# Power
-TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/enable_dt2w"
-
 # Treble
 BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
 PRODUCT_FULL_TREBLE_OVERRIDE := true
 PRODUCT_COMPATIBILITY_MATRIX_LEVEL_OVERRIDE := 27
+
+# Root Folders
+BOARD_ROOT_EXTRA_FOLDERS := dsp firmware persist
 
 # Inherit from the proprietary version
 -include vendor/xiaomi/vince/BoardConfigVendor.mk

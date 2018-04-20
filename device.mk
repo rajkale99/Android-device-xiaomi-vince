@@ -15,7 +15,7 @@
 #
 
 $(call inherit-product, vendor/xiaomi/vince/vince-vendor.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_n.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_n_mr1.mk)
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
@@ -34,9 +34,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libkeymaster1
 
-# Consumerir
+# ConsumerIr
 PRODUCT_PACKAGES += \
-    android.hardware.ir@1.0-service.xiaomi_vince
+    android.hardware.ir@1.0-impl \
+    android.hardware.ir@1.0-service
 
 # Ramdisk
 PRODUCT_PACKAGES += \
