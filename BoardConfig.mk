@@ -18,13 +18,16 @@
 
 DEVICE_PATH := device/xiaomi/vince
 
+# DT2W
+TARGET_TAP_TO_WAKE_NODE := "/sys/class/input/input2/wake_gesture"
+
 # Filesystem
 BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
 TARGET_COPY_OUT_VENDOR := vendor
 
 # Kernel
-TARGET_KERNEL_SOURCE := kernel/xiaomi/vince
+TARGET_KERNEL_SOURCE := kernel/xiaomi/msm8953
 TARGET_KERNEL_CONFIG := vince_defconfig
 
 # Lineage Hardware
