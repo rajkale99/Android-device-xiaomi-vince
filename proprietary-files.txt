@@ -6,27 +6,26 @@ etc/acdbdata/MTP/MTP_Handset_cal.acdb:vendor/etc/acdbdata/MTP/MTP_Handset_cal.ac
 etc/acdbdata/MTP/MTP_Hdmi_cal.acdb:vendor/etc/acdbdata/MTP/MTP_Hdmi_cal.acdb
 etc/acdbdata/MTP/MTP_Headset_cal.acdb:vendor/etc/acdbdata/MTP/MTP_Headset_cal.acdb
 etc/acdbdata/MTP/MTP_Speaker_cal.acdb:vendor/etc/acdbdata/MTP/MTP_Speaker_cal.acdb
-etc/acdbdata/MTP/msm8953-tasha-snd-card/MTP_WCD9335_Bluetooth_cal.acdb:vendor/etc/acdbdata/MTP/msm8953-tasha-snd-card/MTP_WCD9335_Bluetooth_cal.acdb
-etc/acdbdata/MTP/msm8953-tasha-snd-card/MTP_WCD9335_General_cal.acdb:vendor/etc/acdbdata/MTP/msm8953-tasha-snd-card/MTP_WCD9335_General_cal.acdb
-etc/acdbdata/MTP/msm8953-tasha-snd-card/MTP_WCD9335_Global_cal.acdb:vendor/etc/acdbdata/MTP/msm8953-tasha-snd-card/MTP_WCD9335_Global_cal.acdb
-etc/acdbdata/MTP/msm8953-tasha-snd-card/MTP_WCD9335_Handset_cal.acdb:vendor/etc/acdbdata/MTP/msm8953-tasha-snd-card/MTP_WCD9335_Handset_cal.acdb
-etc/acdbdata/MTP/msm8953-tasha-snd-card/MTP_WCD9335_Hdmi_cal.acdb:vendor/etc/acdbdata/MTP/msm8953-tasha-snd-card/MTP_WCD9335_Hdmi_cal.acdb
-etc/acdbdata/MTP/msm8953-tasha-snd-card/MTP_WCD9335_Headset_cal.acdb:vendor/etc/acdbdata/MTP/msm8953-tasha-snd-card/MTP_WCD9335_Headset_cal.acdb
-etc/acdbdata/MTP/msm8953-tasha-snd-card/MTP_WCD9335_Speaker_cal.acdb:vendor/etc/acdbdata/MTP/msm8953-tasha-snd-card/MTP_WCD9335_Speaker_cal.acdb
-etc/acdbdata/QRD/QRD_Bluetooth_cal.acdb:vendor/etc/acdbdata/QRD/QRD_Bluetooth_cal.acdb
-etc/acdbdata/QRD/QRD_General_cal.acdb:vendor/etc/acdbdata/QRD/QRD_General_cal.acdb
-etc/acdbdata/QRD/QRD_Global_cal.acdb:vendor/etc/acdbdata/QRD/QRD_Global_cal.acdb
-etc/acdbdata/QRD/QRD_Handset_cal.acdb:vendor/etc/acdbdata/QRD/QRD_Handset_cal.acdb
-etc/acdbdata/QRD/QRD_Hdmi_cal.acdb:vendor/etc/acdbdata/QRD/QRD_Hdmi_cal.acdb
-etc/acdbdata/QRD/QRD_Headset_cal.acdb:vendor/etc/acdbdata/QRD/QRD_Headset_cal.acdb
-etc/acdbdata/QRD/QRD_Speaker_cal.acdb:vendor/etc/acdbdata/QRD/QRD_Speaker_cal.acdb
-etc/acdbdata/QRD/QRD_adsp_avs_config.acdb:vendor/etc/acdbdata/QRD/QRD_adsp_avs_config.acdb
-etc/acdbdata/QRD/QRD_workspaceFile.qwsp:vendor/etc/acdbdata/QRD/QRD_workspaceFile.qwsp
-etc/acdbdata/adsp_avs_config.acdb:vendor/etc/acdbdata/adsp_avs_config.acdb
+
+# Audio
+vendor/lib/hw/audio.primary.msm8953.so
+vendor/lib64/hw/audio.primary.msm8953.so
+vendor/lib/libtinyalsa.so
+vendor/lib/libtinycompress.so
+vendor/lib/libtinyxml.so
+vendor/lib64/libtinyalsa.so
+vendor/lib64/libtinycompress.so
+vendor/lib64/libtinyxml.so
+vendor/firmware/tas2557_uCDSP.bin
 
 # Camera
-bin/mm-qcamera-daemon:vendor/bin/mm-qcamera-daemon
+vendor/bin/mm-qcamera-daemon
+vendor/bin/hw/android.hardware.camera.provider@2.4-service
+vendor/etc/init/android.hardware.camera.provider@2.4-service.rc
 vendor/lib/hw/camera.msm8953.so
+vendor/lib/hw/android.hardware.camera.provider@2.4-impl.so
+vendor/lib/camera.device@1.0-impl.so
+vendor/lib/camera.device@3.2-impl.so
 vendor/lib/libchromaflash.so
 vendor/lib/libflash_pmic.so
 vendor/lib/libjpegdhw.so
@@ -338,12 +337,6 @@ etc/camera/vince_imx486_ofilm_chromatix.xml:vendor/etc/camera/vince_imx486_ofilm
 etc/camera/vince_ov12a10_sunny_chromatix.xml:vendor/etc/camera/vince_ov12a10_sunny_chromatix.xml
 etc/camera/vince_ov5675_ofilm_chromatix.xml:vendor/etc/camera/vince_ov5675_ofilm_chromatix.xml
 etc/camera/vince_ov5675_qtech_chromatix.xml:vendor/etc/camera/vince_ov5675_qtech_chromatix.xml
-
-# Display calibration
-etc/qdcm_calib_data_nt36672_csot_e7_fhdplus_video_mode_dsi_panel.xml:vendor/etc/qdcm_calib_data_nt36672_csot_e7_fhdplus_video_mode_dsi_panel.xml
-etc/qdcm_calib_data_td4310_ebbg_fhdplus_e7_video_mode_dsi_panel.xml:vendor/etc/qdcm_calib_data_td4310_ebbg_fhdplus_e7_video_mode_dsi_panel.xml
-etc/qdcm_calib_data_td4310_fhdplus_e7_g55_video_mode_dsi_panel.xml:vendor/etc/qdcm_calib_data_td4310_fhdplus_e7_g55_video_mode_dsi_panel.xml
-etc/qdcm_calib_data_td4310_fhdplus_e7_video_mode_dsi_panel.xml:vendor/etc/qdcm_calib_data_td4310_fhdplus_e7_video_mode_dsi_panel.xml
 
 # Consumer IR
 vendor/lib64/hw/consumerir.default.so
