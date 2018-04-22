@@ -122,7 +122,7 @@ vendor/lib/libmmcamera_vince_ov12a10_sunny.so
 vendor/lib/libmmcamera_vince_ov5675_ofilm_eeprom.so
 vendor/lib/libmmcamera_vince_ov5675_ofilm.so
 vendor/lib/libmmcamera_vince_ov5675_qtech_eeprom.so
-vendor/lib/ibmmcamera_vince_ov5675_qtech.so
+vendor/lib/libmmcamera_vince_ov5675_qtech.so
 vendor/lib/libmmjpeg.so
 vendor/lib/libmmjpeg_interface.so
 vendor/lib/libmm-qcamera.so
@@ -351,6 +351,7 @@ vendor/lib64/hw/consumerir.default.so
 # Fingerprint
 vendor/lib64/hw/fingerprint.default.so
 vendor/lib64/hw/gf_fingerprint.default.so
+vendor/lib64/com.fingerprints.extension@1.0.so
 vendor/lib64/libgf_algo.so
 vendor/lib64/libgf_ca.so
 vendor/lib64/libgf_hal.so
