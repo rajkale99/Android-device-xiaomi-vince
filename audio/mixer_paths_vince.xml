@@ -100,6 +100,10 @@
     <ctl name="DEC4 MUX" value="ZERO" />
     <ctl name="SpkrMono VISENSE Switch" value="0" />
 
+    <!--tas2557 Smart PA-->
+    <ctl name="Calibration" value="255" />
+    <!--tas2557 Smart PA end-->
+
     <!--MAX98927 Smart PA-->
     <ctl name="DRE EN" value="1" />
     <ctl name="Left Channel Enable" value="0" />
