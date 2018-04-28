@@ -127,7 +127,6 @@ vendor/lib/libmmjpeg_interface.so
 vendor/lib/libmm-qcamera.so
 vendor/lib/libmmqjpeg_codec.so
 vendor/lib/libmmqjpegdma.so
-vendor/lib/libmpbase.so
 vendor/lib/libois_lc898122.so
 vendor/lib/liboptizoom.so
 vendor/lib/libqomx_core.so
