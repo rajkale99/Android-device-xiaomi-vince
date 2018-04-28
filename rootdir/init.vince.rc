@@ -56,3 +56,24 @@ service goodix_script /vendor/bin/init.goodix.sh
     class late_start
     user root
     oneshot
+
+#smartpa test for E7 --begin
+service spcali /vendor/bin/sh vendor/bin/sp_cali.sh
+    class main
+    user root
+    oneshot
+    disabled
+    seclabel u:r:factorytest:s0
+on property:sys.spcali.sp=1
+    start spcali
+
+service sptest /vendor/bin/sh vendor/bin/sp_test.sh
+    class main
+    user root
+    oneshot
+    disabled
+    seclabel u:r:factorytest:s0
+on property:sys.sptest.sp=1
+    start sptest
+#smartpa test for E7 --end
+
