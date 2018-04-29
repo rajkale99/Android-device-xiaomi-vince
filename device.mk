@@ -41,8 +41,10 @@ PRODUCT_PACKAGES += \
 
 # Ramdisk
 PRODUCT_PACKAGES += \
+    init.vince.rc \
     init.goodix.sh \
-    init.vince.rc
+    sp_cali.sh \
+    sp_test.sh
 
 # Sensors
 PRODUCT_PACKAGES += \
