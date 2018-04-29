@@ -42,6 +42,7 @@ PRODUCT_PACKAGES += \
 # Ramdisk
 PRODUCT_PACKAGES += \
     init.vince.rc \
+    init.goodix.sh \
     sp_cali.sh \
     sp_test.sh
 
