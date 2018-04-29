@@ -31,7 +31,6 @@ on boot
     chown system system /dev/goodix_fp
     chmod 0644 /dev/goodix_fp
     
-
     # add for fpc 
     chown system system /sys/devices/soc/soc:fpc1020/compatible_all
     chmod 0664 /sys/devices/soc/soc:fpc1020/compatible_all
@@ -44,7 +43,6 @@ on boot
     chown system system /sys/devices/soc/soc:fpc1020/fingerdown_wait
     chmod 0660 /sys/devices/soc/soc:fpc1020/fingerdown_wait
 
-
 on property:sys.fp.vendor=goodix
    setprop ro.boot.fpsensor goodix
    setprop persist.sys.fp.vendor goodix
@@ -56,3 +54,24 @@ service goodix_script /vendor/bin/init.goodix.sh
     class late_start
     user root
     oneshot
+
+#smartpa test for E7 --begin
+service spcali /vendor/bin/sh vendor/bin/sp_cali.sh
+    class main
+    user root
+    oneshot
+    disabled
+    seclabel u:r:factorytest:s0
+on property:sys.spcali.sp=1
+    start spcali
+
+service sptest /vendor/bin/sh vendor/bin/sp_test.sh
+    class main
+    user root
+    oneshot
+    disabled
+    seclabel u:r:factorytest:s0
+on property:sys.sptest.sp=1
+    start sptest
+#smartpa test for E7 --end
+
