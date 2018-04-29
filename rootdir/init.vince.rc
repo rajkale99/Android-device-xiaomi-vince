@@ -50,11 +50,6 @@ on property:sys.fp.vendor=goodix
 on property:sys.fp.vendor=FPC
    setprop ro.boot.fpsensor fpc
 
-service goodix_script /vendor/bin/init.goodix.sh
-    class late_start
-    user root
-    oneshot
-
 #smartpa test for E7 --begin
 service spcali /vendor/bin/sh vendor/bin/sp_cali.sh
     class main
