@@ -1,2 +1,2 @@
-add_lunch_combo havoc_vince-userdebug
+add_lunch_combo cos_vince-userdebug
 
