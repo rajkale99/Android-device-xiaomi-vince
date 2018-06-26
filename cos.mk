@@ -21,8 +21,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from vince device
 $(call inherit-product, device/xiaomi/vince/device.mk)
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/cos/config/common_full_phone.mk)
+# Inherit some common cosmic stuff.
+$(call inherit-product, vendor/cos/common.mk)
 
 # Device identifier. This must come after all inclusions
 TARGET_VENDOR := Xiaomi
