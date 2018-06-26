@@ -164,9 +164,9 @@ PRODUCT_PACKAGES += \
     vendor.display.config@1.1 \
     vendor.display.config@1.1_vendor
 
-# Doze mode    
+# Doze mode 
 PRODUCT_PACKAGES += \
-    XiaomiDoze 
+    XiaomiDoze
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -262,6 +262,9 @@ PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service \
     lights.msm8953
 
+# LiveDisplay native
+ PRODUCT_PACKAGES += \
+     vendor.lineage.livedisplay@1.0-service-sdm
 
 # Media
 PRODUCT_COPY_FILES += \
