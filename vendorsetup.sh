@@ -1,2 +1,2 @@
-add_lunch_combo toxyc_vince-userdebug
+add_lunch_combo mdroid_vince-userdebug
 
