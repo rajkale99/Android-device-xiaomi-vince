@@ -1,2 +1,2 @@
-add_lunch_combo toxyc_vince-userdebug
+add_lunch_combo invictrix_vince-userdebug
 
