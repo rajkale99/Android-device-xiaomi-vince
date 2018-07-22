@@ -1,14 +1,14 @@
 [
  {
-   "repository": "android_device_xiaomi_vince",
+   "repository": "device_xiaomi_vince",
    "target_path": "device/xiaomi/vince"
  },
  {
-   "repository": "android_kernel_xiaomi_vince",
+   "repository": "kernel_xiaomi_vince",
    "target_path": "kernel/xiaomi/vince"
  },
  {
-   "repository": "proprietary_vendor_xiaomi_vince",
-   "target_path": "vendor/xiaomi"
+   "repository": "vendor_xiaomi_vince",
+   "target_path": "vendor/xiaomi/vince"
  }
 ]
