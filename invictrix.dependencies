@@ -1,11 +1,11 @@
 [
  {
-   "repository": "kernel_xiaomi_vince",
+   "repository": "InvictrixROM-Devices/kernel_xiaomi_vince",
    "target_path": "kernel/xiaomi/vince",
    "branch": "inv-8.1"
  },
  {
-   "repository": "vendor_xiaomi_vince",
+   "repository": "InvictrixROM-Devices/vendor_xiaomi_vince",
    "target_path": "vendor/xiaomi/vince",
    "branch": "inv-8.1"
  }
