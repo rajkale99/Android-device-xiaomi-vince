@@ -173,9 +173,6 @@ ro.vendor.qti.am.reschedule_service=true
 # set cutoff voltage to 3400mV
 ro.cutoff_voltage_mv=3400
 
-#set device emmc size
-ro.emmc_size=16GB
-
 #force HAL1 for below packages
 vendor.camera.hal1.packagelist=com.skype.raider,com.google.android.talk
 
@@ -201,10 +198,6 @@ persist.dirac.acs.controller=afm
 persist.dirac.afm.mode=global
 persist.dirac.acs.storeSettings=1
 persist.dirac.poolsize=3
-#Set ims sip user agent
-ro.build.software.version=Android9.0.0
-ro.fota.oem=Xiaomi
-ro.product.model=Mi A1
 
 # enable ui/render thread sched FIFO
 sys.use_fifo_ui=1

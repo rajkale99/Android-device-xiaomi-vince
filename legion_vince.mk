@@ -22,8 +22,11 @@ $(call inherit-product-if-exists, vendor/MiuiCamera/config.mk)
 # Inherit from vince device
 $(call inherit-product, device/xiaomi/vince/device.mk)
 
-# Inherit some common XenonHD stuff.
+# Inherit some common LegionOS stuff.
 $(call inherit-product, vendor/legion/config/common.mk)
+
+# Boot Animation
+TARGET_BOOT_ANIMATION_RES := 2160
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := vince
@@ -42,4 +45,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
 BUILD_FINGERPRINT := "xiaomi/vince/vince:8.1.0/OPM1.171019.019/9.3.28:user/release-keys"
 
-LEGION_BUILD_TYPE := OFFICIALþ
+LEGION_BUILD_TYPE := OFFICIAL
